@@ -1,0 +1,50 @@
+- Users
+  - username
+  - email
+  - password 
+  - created_at
+  - updated_at
+
+- Tasks
+  - title
+  - description
+  - due_date
+  - priority
+  - status
+  - user_id (foreign key)
+  - created_at
+  - updated_at
+
+- Projects (Optional)
+  - name
+  - description
+  - user_id (foreign key)
+  - created_at
+  - updated_at
+
+
+- Notes (Optional)
+  - content
+  - task_id (foreign key)
+  - created_at
+  - updated_at
+
+- Settings (Optional)
+  - user_id (foreign key)
+  - setting_name
+  - setting_value
+  - created_at
+  - updated_at
+
+- Sessions (Optional)
+  - user_id (foreign key)
+  - session_token
+  - expiry_timestamp
+  - created_at
+  - updated_at
+
+- Activity Log (Optional)
+  - user_id (foreign key)
+  - action_type
+  - action_details
+  - timestamp
